@@ -3,8 +3,113 @@ header, section, div, footer, ul, li, a, ol, dl, dd, dt {
   font-family: "Inter", sans-serif; 
 }
 
-/* _____________________________HEADER_____________________________ */
+:root{
+  --white:#FFF;
+  --systemGrey:#E0E0E0;
+  --light-primary-origin:#3563E9;
+}
 
+/* _____________________________HEADER_____________________________ */
+header{
+  background: #0D0D0D;
+  padding-top: 32px;
+  padding-bottom: 96px;
+}
+
+header .container{
+  max-width: 1000px;
+}
+
+header .container .row{
+  padding: 24px 32px;
+  border-radius: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
+  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul{
+  gap: 30px;
+}
+
+.navbar ul li a{
+  color: var(--systemGrey);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.navbar ul li a:hover,
+.active{
+  color: var(--white);
+}
+
+header .lang{
+  gap:20px;
+}
+
+header .lang button{
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.gap-lang{
+  gap: 7px;
+}
+
+.main-link{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.46px;
+  color: var(--light-primary-origin);
+  border-radius: 5px;
+  background: var(--white);
+  padding: 8px 22px;
+}
+
+header .dropdown-content {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  z-index: 6;
+  height: 100vh;
+  padding: 24px;
+}
+
+header #check:checked ~ .dropdown-content {
+  right: 0;
+}
+
+header #check {
+  appearance: none;
+}
+
+header #check:checked ~ .dropdown-content .close-menu {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+header #check:checked ~ .overley {
+  background-color: rgba(26, 26, 26, 0.54);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.open-menu svg path{
+  fill: var(--systemGrey);
+}
 /*  ______________________________HERO_SECTION______________________________ */
 
 /* ______________________________CHOOSE_SECTION______________________________ */

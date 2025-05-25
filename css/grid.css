@@ -313,6 +313,29 @@ button {
   flex-wrap: wrap;
 }
 
-.flex-direction {
+.flex-direction-column {
   flex-direction: column;
+}
+
+@media (max-width: 920px) {
+  .d-sm-none {
+    display: none;
+  }
+  .sm-justify-content-center {
+    justify-content: center;
+  }
+  .sm-align-items-center {
+    align-items: center;
+  }
+  .sm-social-gap {
+    gap: 40px;
+  }
+  .sm-direction-column {
+    flex-direction: column;
+  }
+}
+@media (min-width: 920px) {
+  .d-md-none {
+    display: none;
+  }
 }
