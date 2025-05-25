@@ -1,73 +1,79 @@
 h1, h2, h3, h4, h5, h6, p, span, input, button, form,
 header, section, div, footer, ul, li, a, ol, dl, dd, dt {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif; 
 }
+
+$white:#FFF;
+$systemGrey:#E0E0E0;
+$light-primary-origin:#3563E9;
+$backg:#0D0D0D;
+$light-gre:rgba(255, 255, 255, 0.15);
 
 /* _____________________________HEADER_____________________________ */
-header {
-  background: #0D0D0D;
-  padding-top: 32px;
-  padding-bottom: 96px;
+header{
+    background: $backg;
+    padding-top: 32px;
+    padding-bottom: 96px;
 }
 
-header .container {
-  max-width: 1000px;
+header .container{
+    max-width: 1000px;
 }
 
-header .container .row {
+header .container .row{
   padding: 24px 32px;
   border-radius: 56px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0) 0%, rgba(28, 27, 51, 0.1) 100%);
-  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid $light-gre;
+  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
+  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
   backdrop-filter: blur(10px);
 }
 
-.navbar ul {
+.navbar ul{
   gap: 30px;
 }
 
-.navbar ul li a {
-  color: #E0E0E0;
+.navbar ul li a{
+  color: $systemGrey;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
 
 .navbar ul li a:hover,
-.active {
-  color: #FFF;
+.active{
+  color: $white;
 }
 
-header .lang {
-  gap: 20px;
+header .lang{
+  gap:20px;
 }
 
-header .lang button {
-  color: #FFF;
+header .lang button{
+  color: $white;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 }
 
-.gap-lang {
+.gap-lang{
   gap: 7px;
 }
 
-.main-link {
+.main-link{
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.46px;
-  color: #3563E9;
+  color: $light-primary-origin;
   border-radius: 5px;
-  background: #FFF;
+  background: $white;
   padding: 8px 22px;
 }
 
 header .dropdown-content {
   position: fixed;
-  background-color: #FFF;
+  background-color: $white;
   top: 0;
   right: -100%;
   width: 70%;
@@ -92,7 +98,7 @@ header #check:checked ~ .dropdown-content .close-menu {
 }
 
 header #check:checked ~ .overley {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: $light-gre;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -101,14 +107,15 @@ header #check:checked ~ .overley {
   z-index: 5;
 }
 
-.open-menu svg path {
-  fill: #E0E0E0;
+.open-menu svg path{
+  fill: $systemGrey;
 }
-
 /*  ______________________________HERO_SECTION______________________________ */
-/* ______________________________CHOOSE_SECTION______________________________ */
-/*  ______________________________REVIEWS_SECTION______________________________ */
-/*  ______________________________PLAN_SECTION______________________________ */
-/*  ______________________________FOOTER______________________________ */
 
-/*# sourceMappingURL=style.css.map */
+/* ______________________________CHOOSE_SECTION______________________________ */
+
+/*  ______________________________REVIEWS_SECTION______________________________ */
+
+/*  ______________________________PLAN_SECTION______________________________ */
+
+/*  ______________________________FOOTER______________________________ */
