@@ -48,7 +48,7 @@
                 </nav>
 
                 <div class="col-auto  lang d-flex d-sm-none">
-                    <div class="d-flex gap-lang align-items-center justify-content-center">
+                    <div class="ddmenu-lang d-flex gap-lang align-items-center justify-content-center">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M2 12.5H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -57,11 +57,12 @@
 
                         <button>En</button>
 
-                        <!-- <ul class="d-flex flex-direction-column">
+                        <ul class="drop-down-lang">
                             <button>En</button>
                             <button>Ar</button>
-                        </ul> -->
+                        </ul>
                     </div>
+                    
                     <a class="main-link d-flex align-items-center justify-content-center" href="">
                         LogIn
                     </a>
@@ -76,8 +77,59 @@
                         <label for="check" class="close-menu d-md-none d-sm-none">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 12.7082L6.75399 17.9542C6.66065 18.0476 6.54599 18.0976 6.40999 18.1042C6.27399 18.1109 6.15265 18.0609 6.04599 17.9542C5.93932 17.8476 5.88599 17.7296 5.88599 17.6002C5.88599 17.4709 5.93932 17.3529 6.04599 17.2462L11.292 12.0002L6.04599 6.75423C5.95265 6.6609 5.90265 6.54623 5.89599 6.41023C5.88932 6.27423 5.93932 6.1529 6.04599 6.04623C6.15265 5.93956 6.27065 5.88623 6.39999 5.88623C6.52932 5.88623 6.64732 5.93956 6.75399 6.04623L12 11.2922L17.246 6.04623C17.3393 5.9529 17.4543 5.9029 17.591 5.89623C17.7263 5.88956 17.8473 5.93956 17.954 6.04623C18.0607 6.1529 18.114 6.2709 18.114 6.40023C18.114 6.52956 18.0607 6.64756 17.954 6.75423L12.708 12.0002L17.954 17.2462C18.0473 17.3396 18.0973 17.4546 18.104 17.5912C18.1107 17.7266 18.0607 17.8476 17.954 17.9542C17.8473 18.0609 17.7293 18.1142 17.6 18.1142C17.4707 18.1142 17.3527 18.0609 17.246 17.9542L12 12.7082Z" fill="#2B2B2B"/>
-                            </svg>    
+                            </svg>
                         </label>
+
+                        <div class="ddmenu d-flex flex-direction-column sm-gap">
+                            <!-- logo -->
+                            <div class="col-auto logo">
+                                <a href="">
+                                    <img src="./img/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- navbar -->
+                            <nav class="col-auto navbar">
+                                <ul class="d-flex  sm-direction-column">
+                                    <li>
+                                        <a class="active d-flex align-items-center justify-content-center" href="">Home</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="d-flex align-items-center justify-content-center" href="">Services</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="d-flex align-items-center justify-content-center" href="">Features</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="d-flex align-items-center justify-content-center" href="">About Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="col-auto  lang d-flex sm-direction-column">
+                                <div class="ddmenu-lang d-flex gap-lang align-items-center justify-content-center">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12.5H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 2.5C14.5013 5.23835 15.9228 8.79203 16 12.5C15.9228 16.208 14.5013 19.7616 12 22.5C9.49872 19.7616 8.07725 16.208 8 12.5C8.07725 8.79203 9.49872 5.23835 12 2.5V2.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <button>En</button>
+
+                                    <ul class="drop-down-lang">
+                                        <button>En</button>
+                                        <button>Ar</button>
+                                    </ul>
+                                </div>
+
+                                <a class="main-link d-flex align-items-center justify-content-center" href="">
+                                    LogIn
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <label for="check" class="open-menu d-md-none ">

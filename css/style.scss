@@ -21,94 +21,116 @@ header .container{
 }
 
 header .container .row{
-  padding: 24px 32px;
-  border-radius: 56px;
-  border: 1px solid $light-gre;
-  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
-  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
+    padding: 24px 32px;
+    border-radius: 56px;
+    border: 1px solid $light-gre;
+    background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
+    box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
 }
 
 .navbar ul{
-  gap: 30px;
+    gap: 30px;
 }
 
 .navbar ul li a{
-  color: $systemGrey;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+    color: $systemGrey;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 .navbar ul li a:hover,
 .active{
-  color: $white;
+    color: $white;
 }
 
 header .lang{
-  gap:20px;
+    gap:20px;
 }
 
 header .lang button{
-  color: $white;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
 }
 
 .gap-lang{
-  gap: 7px;
+    gap: 7px;
 }
 
+.drop-down-lang{
+    display: none;
+    position: absolute;
+    padding: 10px 20px;
+    gap: 10px;
+    align-self: stretch;
+    flex-direction: column;
+    border-radius: 6px;
+    background: $light-primary-origin;
+    box-shadow: 0px 4px 4px 0px $light-gre;
+    bottom:-40px;
+}
+
+.ddmenu-lang:hover .drop-down-lang{
+    display: flex;
+}
 .main-link{
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.46px;
-  color: $light-primary-origin;
-  border-radius: 5px;
-  background: $white;
-  padding: 8px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.46px;
+    color: $light-primary-origin;
+    border-radius: 5px;
+    background: $white;
+    padding: 8px 22px;
+    transition: all linear 0.3s;
+}
+
+.main-link:hover{
+    transform: scale(1.1);
+    color: $white;
+    background-color: $light-primary-origin;
 }
 
 header .dropdown-content {
-  position: fixed;
-  background-color: $white;
-  top: 0;
-  right: -100%;
-  width: 70%;
-  z-index: 6;
-  height: 100vh;
-  padding: 24px;
+    position: fixed;
+    background-color: $light-primary-origin;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    z-index: 6;
+    height: 100vh;
+    padding: 24px;
 }
 
 header #check:checked ~ .dropdown-content {
-  right: 0;
+    right: 0;
 }
 
 header #check {
-  appearance: none;
+    appearance: none;
 }
 
 header #check:checked ~ .dropdown-content .close-menu {
-  display: block;
-  position: fixed;
-  top: 20px;
-  right: 20px;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 header #check:checked ~ .overley {
-  background-color: $light-gre;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .open-menu svg path{
-  fill: $systemGrey;
+    fill: $systemGrey;
 }
 /*  ______________________________HERO_SECTION______________________________ */
 

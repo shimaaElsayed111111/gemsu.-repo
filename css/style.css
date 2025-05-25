@@ -55,6 +55,23 @@ header .lang button {
   gap: 7px;
 }
 
+.drop-down-lang {
+  display: none;
+  position: absolute;
+  padding: 10px 20px;
+  gap: 10px;
+  align-self: stretch;
+  flex-direction: column;
+  border-radius: 6px;
+  background: #3563E9;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+  bottom: -40px;
+}
+
+.ddmenu-lang:hover .drop-down-lang {
+  display: flex;
+}
+
 .main-link {
   font-size: 16px;
   font-weight: 500;
@@ -63,11 +80,18 @@ header .lang button {
   border-radius: 5px;
   background: #FFF;
   padding: 8px 22px;
+  transition: all linear 0.3s;
+}
+
+.main-link:hover {
+  transform: scale(1.1);
+  color: #FFF;
+  background-color: #3563E9;
 }
 
 header .dropdown-content {
   position: fixed;
-  background-color: #FFF;
+  background-color: #3563E9;
   top: 0;
   right: -100%;
   width: 70%;
@@ -92,7 +116,6 @@ header #check:checked ~ .dropdown-content .close-menu {
 }
 
 header #check:checked ~ .overley {
-  background-color: rgba(255, 255, 255, 0.15);
   height: 100%;
   width: 100%;
   position: fixed;
