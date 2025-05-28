@@ -36,7 +36,7 @@ button {
 
 $screens: (
     sm: 560px,
-    md: 720px,
+    md: 780px,
     lg: 980px,
 );
 
@@ -81,7 +81,7 @@ $screens: (
   flex-direction: column;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .d-sm-none {
     display: none;
   }
@@ -91,9 +91,6 @@ $screens: (
   .sm-align-items-center {
     align-items: center;
   }
-  .sm-justify-content-center{
-    justify-content: space-around;
-  }
 
   .sm-gap {
     gap: 30px;
@@ -102,7 +99,7 @@ $screens: (
     flex-direction: column;
   }
 }
-@media (min-width: 920px) {
+@media (min-width: 780px) {
   .d-md-none {
     display: none;
   }

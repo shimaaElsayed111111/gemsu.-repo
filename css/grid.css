@@ -9,6 +9,7 @@
 button {
   background-color: transparent;
   border: none;
+  display: flex;
 }
 
 .container {
@@ -95,7 +96,7 @@ button {
     width: 100%;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 780px) {
   .col-md-1 {
     padding-left: 12px;
     padding-right: 12px;
@@ -312,7 +313,7 @@ button {
   flex-direction: column;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .d-sm-none {
     display: none;
   }
@@ -322,9 +323,6 @@ button {
   .sm-align-items-center {
     align-items: center;
   }
-  .sm-justify-content-center {
-    justify-content: space-around;
-  }
   .sm-gap {
     gap: 30px;
   }
@@ -332,7 +330,7 @@ button {
     flex-direction: column;
   }
 }
-@media (min-width: 920px) {
+@media (min-width: 780px) {
   .d-md-none {
     display: none;
   }
