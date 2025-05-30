@@ -92,6 +92,10 @@ $screens: (
     align-items: center;
   }
 
+  .sm-wrap{
+    flex-wrap: wrap;
+  }
+
   .sm-gap {
     gap: 30px;
   }

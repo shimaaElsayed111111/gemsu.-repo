@@ -12,6 +12,8 @@ $grey:#E4DBDB;
 $Grey-Secondary:#676868;
 $primary:#D7FB00;
 $green-primery:rgba(215, 251, 0, 0.24);
+$grey-primery-origin:rgba(65, 65, 65, 0.20);
+$Sexondary:#4026D5;
 
 /* _____________________________HEADER_____________________________ */
 header{
@@ -283,14 +285,6 @@ header #check:checked ~ .overley {
         }
     }
 
-    .list-gap{
-        gap:6px;
-    }
-
-    .ch-gap{
-        gap:12px;
-    }
-
     .ch-item{
         h3{
         font: {
@@ -322,7 +316,157 @@ header #check:checked ~ .overley {
     }
 }
 
+h2{
+    font: {
+        size: 36px;
+        weight: 500;
+    }
+    color: $white;
+    text-align: center;
+}
+
+.ch-gap{
+        gap:12px;
+    }
+
+.list-gap{
+        gap:6px;
+    }
 /*  ______________________________REVIEWS_SECTION______________________________ */
+.reviews-section{
+    background: $backg;
+    padding: 96px 0;
+    overflow: hidden;
+
+    .slider{
+        margin-top: 24px;
+        position:static;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .position-1{
+        left: -250px;
+        position: relative;
+    }
+
+    .gap-col{
+        padding:0 32.5px;
+    }
+
+    .item{
+        border-radius: 24px;
+        background: $grey-primery-origin;
+        backdrop-filter: blur(12.300000190734863px);
+        padding: 14px 16px;
+        transition: all linear 0.3s;
+
+        &:hover{
+            border-radius: 32px;
+            border: 1px solid $Grey-Secondary;
+            background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
+            box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+            backdrop-filter: blur(10px);
+            padding: 24px 32px;
+            transform: scale(1.1);
+        }
+
+        p,
+        .review-p{
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $white;
+        }
+
+        span{
+            font: {
+                    size: 12px;
+                    weight: 500;
+            }
+            color: $Grey-Secondary;
+        }
+    }
+
+    .review-p{
+        line-height: 180%;
+        width: 549px;
+    }
+
+    .pagination{
+        button{
+            border-radius: 33px;
+            background: $primary;
+            width: 44px;
+            height: 44px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .pag-b1{
+            left: 370px;
+            bottom: 150px;
+        }
+
+        .pag-b2{
+            left: 1025px;
+            bottom: 190px;
+        }
+    }
+
+    .slides-b{
+        border-radius: 46px;
+        border: 2px solid $backg;
+        background: $Sexondary;
+        width: 48px;
+        height: 48px;
+        left: -125px;
+        }
+
+    span{
+        font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $white;
+    }
+
+    .slides-btns{
+        position: static;
+
+        button{
+            position: relative;
+        }
+
+        .btn{
+            left: -25px;
+        }
+
+        .btn2{
+            left: -50px;
+        }
+
+        .btn3{
+            left: -75px;
+        }
+
+        .btn4{
+            left:-100px
+        }
+    }
+
+    .slides{
+        position: static;
+    }
+
+    .star{
+        left: -120px;
+        position: relative;
+    }
+}
 
 /*  ______________________________PLAN_SECTION______________________________ */
 

@@ -237,12 +237,6 @@ header #check:checked ~ .overley {
   color: #676868;
   text-align: center;
 }
-.choose-section .list-gap {
-  gap: 6px;
-}
-.choose-section .ch-gap {
-  gap: 12px;
-}
 .choose-section .ch-item h3 {
   font-size: 18px;
   font-weight: 500;
@@ -265,7 +259,127 @@ header #check:checked ~ .overley {
   height: 55px;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+}
+
+.ch-gap {
+  gap: 12px;
+}
+
+.list-gap {
+  gap: 6px;
+}
+
 /*  ______________________________REVIEWS_SECTION______________________________ */
+.reviews-section {
+  background: #0D0D0D;
+  padding: 96px 0;
+  overflow: hidden;
+}
+.reviews-section .slider {
+  margin-top: 24px;
+  position: static;
+}
+.reviews-section .row {
+  flex-wrap: nowrap;
+}
+.reviews-section .position-1 {
+  left: -250px;
+  position: relative;
+}
+.reviews-section .gap-col {
+  padding: 0 32.5px;
+}
+.reviews-section .item {
+  border-radius: 24px;
+  background: rgba(65, 65, 65, 0.2);
+  backdrop-filter: blur(12.3000001907px);
+  padding: 14px 16px;
+  transition: all linear 0.3s;
+}
+.reviews-section .item:hover {
+  border-radius: 32px;
+  border: 1px solid #676868;
+  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0) 0%, rgba(28, 27, 51, 0.1) 100%);
+  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 24px 32px;
+  transform: scale(1.1);
+}
+.reviews-section .item p,
+.reviews-section .item .review-p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+}
+.reviews-section .item span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #676868;
+}
+.reviews-section .review-p {
+  line-height: 180%;
+  width: 549px;
+}
+.reviews-section .pagination button {
+  border-radius: 33px;
+  background: #D7FB00;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  z-index: 100;
+}
+.reviews-section .pagination .pag-b1 {
+  left: 370px;
+  bottom: 150px;
+}
+.reviews-section .pagination .pag-b2 {
+  left: 1025px;
+  bottom: 190px;
+}
+.reviews-section .slides-b {
+  border-radius: 46px;
+  border: 2px solid #0D0D0D;
+  background: #4026D5;
+  width: 48px;
+  height: 48px;
+  left: -125px;
+}
+.reviews-section span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+}
+.reviews-section .slides-btns {
+  position: static;
+}
+.reviews-section .slides-btns button {
+  position: relative;
+}
+.reviews-section .slides-btns .btn {
+  left: -25px;
+}
+.reviews-section .slides-btns .btn2 {
+  left: -50px;
+}
+.reviews-section .slides-btns .btn3 {
+  left: -75px;
+}
+.reviews-section .slides-btns .btn4 {
+  left: -100px;
+}
+.reviews-section .slides {
+  position: static;
+}
+.reviews-section .star {
+  left: -120px;
+  position: relative;
+}
+
 /*  ______________________________PLAN_SECTION______________________________ */
 /*  ______________________________FOOTER______________________________ */
 
