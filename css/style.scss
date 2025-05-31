@@ -469,5 +469,86 @@ h2{
 }
 
 /*  ______________________________PLAN_SECTION______________________________ */
+.plan-section{
+    background: $backg;
+
+    p{
+        color: var(--Grey-Secondary, #676868);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        max-width:1014px ;
+        margin-top: 16px;
+    }
+
+    .col-plan{
+        padding: 0 30px;
+    }
+
+    .item{
+        border-radius: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0.00) 0%, rgba(28, 27, 51, 0.10) 100%);
+        box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(10px);
+        width: 386px;
+        padding: 24px 32px;
+        transition: all linear 0.3s;
+
+        &:hover{
+            border-radius: 32px;
+            background: #D7FB00;
+            transform: translateY(10px);
+        }
+
+        span{
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $Grey-Secondary;
+        }
+
+        p{
+            font: {
+                size: 48px;
+                weight: 500;
+            }
+            color: $white;
+            margin-bottom: 38px;
+            
+        }
+
+        ul{
+            text-align: start;
+        }
+
+        ul{
+            li{
+                list-style-type: disc;
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 180%;
+                max-width: 270px;
+            }
+        }
+
+        .plan-link{
+            border-radius: 60px;
+            border: 1px solid #505157;
+            width: 202px;
+            height: 57px;
+            margin-top: 38px;
+
+            a{
+                color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            }
+        }
+    }
+    }
+
 
 /*  ______________________________FOOTER______________________________ */

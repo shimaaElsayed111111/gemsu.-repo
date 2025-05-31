@@ -381,6 +381,70 @@ h2 {
 }
 
 /*  ______________________________PLAN_SECTION______________________________ */
+.plan-section {
+  background: #0D0D0D;
+}
+.plan-section p {
+  color: var(--Grey-Secondary, #676868);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 1014px;
+  margin-top: 16px;
+}
+.plan-section .col-plan {
+  padding: 0 30px;
+}
+.plan-section .item {
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 99.59%), linear-gradient(180deg, rgba(46, 51, 90, 0) 0%, rgba(28, 27, 51, 0.1) 100%);
+  box-shadow: 0px 0px 100px 0px rgba(204, 215, 255, 0.15) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 30px 0px rgba(0, 0, 0, 0.05), 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 386px;
+  padding: 24px 32px;
+  transition: all linear 0.3s;
+}
+.plan-section .item:hover {
+  border-radius: 32px;
+  background: #D7FB00;
+  transform: translateY(10px);
+}
+.plan-section .item span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #676868;
+}
+.plan-section .item p {
+  font-size: 48px;
+  font-weight: 500;
+  color: #FFF;
+  margin-bottom: 38px;
+}
+.plan-section .item ul {
+  text-align: start;
+}
+.plan-section .item ul li {
+  list-style-type: disc;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 180%;
+  max-width: 270px;
+}
+.plan-section .item .plan-link {
+  border-radius: 60px;
+  border: 1px solid #505157;
+  width: 202px;
+  height: 57px;
+  margin-top: 38px;
+}
+.plan-section .item .plan-link a {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /*  ______________________________FOOTER______________________________ */
 
 /*# sourceMappingURL=style.css.map */
